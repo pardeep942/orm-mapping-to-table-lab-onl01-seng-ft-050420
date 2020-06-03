@@ -17,7 +17,7 @@ def initialize(name, grade, id=nil)
       grade INTEGER )
       
       SQL
-       DB[:conn].execute(sql) 
+       (DB[:conn].execute(sql) 
      
    end 
    
