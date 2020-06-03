@@ -31,8 +31,8 @@ def initialize(name, grade, id=nil)
    
    def save 
     sql = <<-SQL
-      INSERT INTO students (name, id) 
-      VALUES (?,?)
+      INSERT INTO students (name,grade) 
+      VALUES (name,id)
     SQL
  
     DB[:conn].execute(sql)
