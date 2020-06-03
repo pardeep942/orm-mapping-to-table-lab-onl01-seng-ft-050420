@@ -14,7 +14,7 @@ def initialize(name, grade, id=nil)
      CREATE TABLE IF NOT EXISTS student (
       id INTEGER PRIMARY KEY, 
       name TEXT, 
-      grade INTEGER
+      grade INTEGER )
       
       SQL
        DB[:conn].execute(sql) 
