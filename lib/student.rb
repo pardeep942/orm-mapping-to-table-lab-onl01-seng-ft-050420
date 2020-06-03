@@ -32,7 +32,7 @@ def initialize(name, grade, id=nil)
    def save 
     sql = <<-SQL
       INSERT INTO students (name,grade) 
-      VALUES (name,id)
+      VALUES (id)
     SQL
  
     DB[:conn].execute(sql)
