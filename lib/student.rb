@@ -31,7 +31,7 @@ def initialize(name, grade, id=nil)
    
    def save
     sql = <<-SQL
-      INSERT INTO student ("name", "grade") 
+      INSERT INTO student (name, grade) 
       VALUES (?, ?)
     SQL
  
