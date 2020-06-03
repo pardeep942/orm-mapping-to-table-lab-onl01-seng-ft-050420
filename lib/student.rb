@@ -29,7 +29,7 @@ def initialize(name, grade, id=nil)
      
    end
    
-   def save (name ,id)
+   def save 
     sql = <<-SQL
       INSERT INTO students (name, id) 
       VALUES (?,?)
