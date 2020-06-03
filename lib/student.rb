@@ -21,9 +21,8 @@ def initialize(name, grade, id=nil)
      
    end 
    
-   
    def self.drop_table
-     sql =  <<-SQL 
+     sql = <<-SQL 
      DROP TABLE students
       SQL
      DB[:conn].execute(sql) 
@@ -42,7 +41,7 @@ def initialize(name, grade, id=nil)
  
   end
   
-  def self.create(name, grade)
+  def self.create(:name, :grade)
     student = Student.new(name, grade)
     student.save
     student 
