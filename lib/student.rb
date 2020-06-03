@@ -35,7 +35,7 @@ def initialize(name, grade, id=nil)
       VALUES (?,?)
     SQL
  
-    DB[:conn].execute(sql, self.name, self.name)
+    DB[:conn].execute(sql)
  
   end
   
